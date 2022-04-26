@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+	  body {
+		margin: 0;
+      }
+	  
+	  html * {
+        box-sizing: border-box;
+      }
+      
+      .getNode {
+        height: 40px;
+        width: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+	  
+      .tree {
+		display: flex;    
+        width: 700px;
+        height: 600px;
+        background-color: whitesmoke;
+		flex: 1;
+      }
+	  
+      .block {
+        background: whitesmoke;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        flex: 1;
+        min-width: 0;
+        padding: 0 2px;
+      }
+      .inner {
+        display: flex;
+        flex: 1;
+        flex-flow: row nowrap;
+        min-width: 0;
+        background: olive;
+        width: 100%;
+      }
+
+      .vertical {
+        width: 1px;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 0px;
+        height: 20px;
+      }
+
+      .internal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: olive;
+        height: 20px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tree" class="tree"></div>
+    <button id="getNode" class="getNode">start</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
